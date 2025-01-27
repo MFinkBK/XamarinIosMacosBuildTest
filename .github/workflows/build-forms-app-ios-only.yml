@@ -29,6 +29,10 @@ jobs:
     - name: "Display Xcode current version"
       run: xcode-select -p
 
+    - name: Install Xamarin SDKs
+      run: |
+        brew install --cask xamarin-ios
+
     - name: Build iOS app
       run: >
         msbuild src/XamarinFormsIosApp/XamarinFormsIosApp.iOS/XamarinFormsIosApp.iOS.csproj
