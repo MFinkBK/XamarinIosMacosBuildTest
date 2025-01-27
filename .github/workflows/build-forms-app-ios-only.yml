@@ -20,6 +20,15 @@ jobs:
       with:
         dotnet-version: 9.0.x
 
+    - name: List already installed Xcode versions
+      run: xcodes list
+
+    - name: Install Xcode version
+      run: xcodes install 14.3
+
+    - name: "Display Xcode current version"
+      run: xcode-select -p
+
     - name: Build iOS app
       run: >
         msbuild src/XamarinFormsIosApp/XamarinFormsIosApp.iOS/XamarinFormsIosApp.iOS.csproj
@@ -27,4 +36,3 @@ jobs:
         /p:Platform=iPhone
         /t:Restore
         /t:Build
-    
