@@ -35,6 +35,11 @@ jobs:
         sudo chmod +x MonoFramework-MDK-6.12.0.188.macos10.xamarin.universal.pkg
         sudo installer -pkg MonoFramework-MDK-6.12.0.188.macos10.xamarin.universal.pkg -target /
 
+    - name: "Display mono and msbuild current versions"
+      run: |
+        mono --version
+        msbuild --version
+
     - name: Install Xamarin SDKs
       run: |
         brew install --cask xamarin-ios
