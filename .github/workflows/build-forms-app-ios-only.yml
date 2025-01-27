@@ -20,9 +20,6 @@ jobs:
       with:
         dotnet-version: 9.0.x
 
-    - name: Setup MSBuild
-      uses: microsoft/setup-msbuild@v2
-
     - name: Build iOS app
       run: >
         msbuild src\XamarinFormsIosApp\XamarinFormsIosApp.iOS\XamarinFormsIosApp.iOS.csproj
