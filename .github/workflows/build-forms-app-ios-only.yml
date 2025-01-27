@@ -23,6 +23,7 @@ jobs:
     - name: Set Xcode version to use
       run: |
         XCODE_ROOT=/Applications/Xcode_16.2.app
+        echo "MD_APPLE_SDK_ROOT=$XCODE_ROOT" >> $GITHUB_ENV
         sudo xcode-select -s $XCODE_ROOT
 
     - name: "Display Xcode current version"
