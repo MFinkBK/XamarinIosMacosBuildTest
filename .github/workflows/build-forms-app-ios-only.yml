@@ -37,6 +37,7 @@ jobs:
         msbuild src/XamarinFormsIosApp/XamarinFormsIosApp.iOS/XamarinFormsIosApp.iOS.csproj
         /p:Configuration=Release
         /p:Platform=iPhone
+        /p:IsMacEnabled=false
         /p:BuildIpa=false
         /t:Restore
         /t:Build
