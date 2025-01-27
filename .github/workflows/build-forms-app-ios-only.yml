@@ -29,6 +29,12 @@ jobs:
     - name: "Display Xcode current version"
       run: xcode-select -p
 
+    - name: Install Mono Framework MDK
+      run: |
+        wget https://download.mono-project.com/archive/6.12.0/macos-10-universal/MonoFramework-MDK-6.12.0.188.macos10.xamarin.universal.pkg
+        sudo chmod +x MonoFramework-MDK-6.12.0.188.macos10.xamarin.universal.pkg
+        sudo installer -pkg MonoFramework-MDK-6.12.0.145.macos10.xamarin.universal.pkg -target /
+
     - name: Install Xamarin SDKs
       run: |
         brew install --cask xamarin-ios
