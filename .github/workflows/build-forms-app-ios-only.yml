@@ -22,7 +22,7 @@ jobs:
 
     - name: Set Xcode version to use
       run: |
-        XCODE_ROOT=/Applications/Xcode_15.3.app
+        XCODE_ROOT=/Applications/Xcode_16.2.app
         sudo xcode-select -s $XCODE_ROOT
 
     - name: "Display Xcode current version"
