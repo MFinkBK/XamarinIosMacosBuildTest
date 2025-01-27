@@ -22,7 +22,7 @@ jobs:
 
     - name: Build iOS app
       run: >
-        msbuild src\XamarinFormsIosApp\XamarinFormsIosApp.iOS\XamarinFormsIosApp.iOS.csproj
+        msbuild src/XamarinFormsIosApp/XamarinFormsIosApp.iOS/XamarinFormsIosApp.iOS.csproj
         /p:Configuration=Release
         /p:Platform=iPhone
         /t:Restore
