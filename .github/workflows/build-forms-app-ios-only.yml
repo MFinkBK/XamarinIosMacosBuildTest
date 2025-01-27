@@ -20,9 +20,6 @@ jobs:
       with:
         dotnet-version: 9.0.x
 
-    - name: List already installed Xcode versions
-      run: xcodes list
-
     - name: Set Xcode version to use
       run: |
         XCODE_ROOT=/Applications/Xcode_15.3.app
